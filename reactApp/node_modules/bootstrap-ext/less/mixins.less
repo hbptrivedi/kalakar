@@ -1,0 +1,22 @@
+.nav-color-schema(@color, @bg-color, @color-active, @bg-color-active) {
+  > li {
+    > a {
+      color: @color;
+      background-color: @bg-color;
+      &:hover, &:focus, &:active {
+        color: @color-active;
+        background: @bg-color-active;
+      }
+    }
+    &.active, &.open {
+      > a {
+        color: @color-active;
+        background: @bg-color-active;
+        &:hover, &:focus, &:active {
+          color: @color-active;
+          background: @bg-color-active;
+        }
+      }
+    }
+  }
+}
